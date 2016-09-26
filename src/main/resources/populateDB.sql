@@ -17,11 +17,11 @@ $$ language plpgsql;
 -- insert initial data
 INSERT INTO a (word) SELECT
                        random_string(4)
-                     FROM generate_series(1, 1000000) s(i);
+                     FROM generate_series(1, 2000000) s(i);
 
 INSERT INTO b (word) SELECT
                        random_string(4)
-                     FROM generate_series(1, 1000000) s(i);
+                     FROM generate_series(1, 2000000) s(i);
 
 INSERT INTO c (id)
   SELECT id AS OID FROM a LEFT JOIN b ON a.word = b.word WHERE b.id2 ISNULL

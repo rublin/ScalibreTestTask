@@ -15,7 +15,7 @@ public class Main {
         //      write to table
         repository.writeTable("tableC", listC);
         long stop = System.currentTimeMillis();
-        System.out.println("Table C has been created. Size: " + listC.size() + ". Time: " + (stop - start) + " ms");
+        System.out.println("Table C was created. Size: " + listC.size() + ". Time: " + (stop - start) + " ms");
         repository.stopConnection();
     }
 }
