@@ -28,7 +28,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
         <!--DB-->
-        <postgresql.version>9.4.1208</postgresql.version>
+        <postgresql.version>42.3.7</postgresql.version>
 
         <!--    Tests  -->
         <junit.version>4.12</junit.version>
